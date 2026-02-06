@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Convert PDF to Word – Free Online PDF Converter | GoConvert</title>
+
+  <meta name="description"
+        content="Convert PDF to Word online for free. Fast, secure PDF to DOCX converter with no signup required. Works on mobile and desktop." />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<div id="siteHeader"></div>
+
+<!-- ================= BREADCRUMBS ================= -->
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="/">Home</a> ›
+  <a href="/convert/">Convert</a> ›
+  <a href="/convert/files/">File Converters</a> ›
+  <span class="current">PDF to Word</span>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main class="container">
+
+  <!-- TOOL PANEL -->
+  <section class="panel">
+    <h1>Convert PDF to Word</h1>
+    <p class="muted">
+      Upload a PDF file and convert it to an editable Word document (DOCX).
+      No signup. Fast and secure.
+    </p>
+
+    <!-- TOOL UI -->
+    <div class="tool-box">
+
+      <label class="upload-box">
+        <input type="file" id="pdfInput" accept=".pdf" hidden>
+        <span>Select PDF File</span>
+      </label>
+
+      <p id="fileName" class="muted"></p>
+
+      <button class="btn btn-primary" onclick="convertPDF()">
+        Convert to Word
+      </button>
+
+      <p class="muted small">
+        Files are automatically deleted after processing.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="panel">
+    <h2>How to Convert PDF to Word</h2>
+    <ol class="steps">
+      <li>Select or upload your PDF file</li>
+      <li>Click the “Convert to Word” button</li>
+      <li>Download the converted DOCX file</li>
+    </ol>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="panel">
+    <h2>Why Convert PDF to Word?</h2>
+    <ul class="checklist">
+      <li>Edit scanned or locked documents</li>
+      <li>Reuse PDF content in Word format</li>
+      <li>Make formatting changes easily</li>
+      <li>Work on documents offline</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section class="panel">
+    <h2>Frequently Asked Questions</h2>
+
+    <p><strong>Is this PDF to Word converter free?</strong><br>
+      Yes. You can convert PDF to Word online for free using GoConvert.</p>
+
+    <p><strong>Is my file secure?</strong><br>
+      Yes. Uploaded files are not stored permanently and are deleted automatically.</p>
+
+    <p><strong>Does this work on mobile?</strong><br>
+      Yes. GoConvert works on mobile, tablet, and desktop devices.</p>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<div id="siteFooter"></div>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="/assets/js/includes.js"></script>
+
+<script>
+  const pdfInput = document.getElementById("pdfInput");
+  const fileName = document.getElementById("fileName");
+
+  pdfInput.addEventListener("change", () => {
+    if (pdfInput.files.length > 0) {
+      fileName.textContent = "Selected file: " + pdfInput.files[0].name;
+    }
+  });
+
+  function convertPDF() {
+    if (!pdfInput.files.length) {
+      alert("Please select a PDF file first.");
+      return;
+    }
+
+    alert(
+      "PDF to Word conversion backend will be connected next.\n\n" +
+      "UI, SEO structure, and AdSense-safe layout are complete."
+    );
+  }
+</script>
+
+</body>
+</html>
